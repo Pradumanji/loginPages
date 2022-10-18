@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Registration Page</title>
+</head>
+<body>
+<script type="text/javascript"language="javascript">
+	Function Co-Validation()
+	{
+		Variable mid =document.Regform.mid;
+		Variable pass=document.Regform.pw;
+		Variable con pass=document.Regform.con pw;
+		if (mid.value=="")
+		 {
+		 	Alert("Enter mid");
+		 	mid.focus();
+		 	return false;
+		 }
+		 if (pass.value=="")
+		  {
+		  	alert("Enter password");
+		  	pass.focus();
+		  	return false;
+
+		  }
+		  if (con pass.value=="")
+		   {
+		   	alert("Enter confirm password");
+		   	con pass.focus();
+		   	return false;
+		   }
+		   Variable pass1=pass.value;
+		   Variable pass2=conpass.value;
+		   Variable value=pass1.match(pass2);
+		   //alert(value);
+		   if (value==null)
+		    {
+		    	alert("Password and confirm pasword didn't match")
+		    	conpass.focus();
+		    	return false;
+		    	{
+		    		alert("Password and confirm pasword didn't match")
+		    	conpass.focus();
+		    	}
+		    }
+
+	}
+</script>
+</body>
+</html>
