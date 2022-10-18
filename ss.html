@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide show</title>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://www.w3school.com/w3css/4/w3.css">
+</head>
+<body>
+	<div class="w3-content w3-section" style="width: 100px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/7.jpg"style="width: 1364px;">
+		<img  class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/8.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/9.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/10.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/11.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/12.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/pk1.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/pk2.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/pk4.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/pk5.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/1.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/pk6.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/2.jpg"style="width: 1364px;">
+		<img class="mySlides"src="C:/Users/pc2/Desktop/onlinlibrarymanagementsystem/image/4.jpg"style="width: 1364px;">
+	</div>
+	<script type="text/javascript">
+		var a=0;
+		carousel();
+		function carousel()
+		{
+			var i;
+			var x=document.getElementByclassName('mySlides');
+			document.write(x.length);
+			
+			for(i=0; i<x.length;i++)
+			{
+				x[1].style.display="none";
+			}
+			a++;
+			if( a > x.length){a = 1}
+				x[a-1].style.display="box1";
+			setTimeout(carousel,1000);
+			
+
+		}
+	</script>
+
+</body>
+</html>
